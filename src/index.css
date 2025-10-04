@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Globoze Veterinary Services Design System 
+   Colors inspired by the GVS logo: Deep maroon red and black
+   Fonts: Montserrat Bold for headings, Open Sans Regular for body
+   All colors MUST be HSL for consistency
+*/
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 40 20% 98%;
+    --foreground: 0 0% 15%;
+
+    /* Card components */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    /* Popover components */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Primary - Deep Maroon from logo */
+    --primary: 0 68% 32%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 0 68% 42%;
+    --primary-dark: 0 68% 24%;
+
+    /* Secondary - Warm neutral */
+    --secondary: 40 15% 92%;
+    --secondary-foreground: 0 0% 15%;
+
+    /* Muted */
+    --muted: 40 15% 94%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent - Lighter maroon for highlights */
+    --accent: 0 75% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 0 75% 55%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 0 68% 32%;
+
+    /* Border radius */
+    --radius: 0.5rem;
+    
+    /* Custom design tokens */
+    --vet-gradient: linear-gradient(135deg, hsl(0, 68%, 32%), hsl(0, 68%, 42%));
+    --warm-gradient: linear-gradient(180deg, hsl(40, 20%, 98%), hsl(40, 15%, 94%));
+    
+    /* Shadows with maroon tint */
+    --shadow-soft: 0 4px 20px -2px hsl(0 68% 32% / 0.1);
+    --shadow-medium: 0 8px 30px -4px hsl(0 68% 32% / 0.15);
+    --shadow-large: 0 12px 40px -6px hsl(0 68% 32% / 0.2);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 15%;
+    --sidebar-primary: 0 68% 32%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 40 15% 95%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 40 15% 88%;
+    --sidebar-ring: 0 68% 32%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 68% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 0 68% 55%;
+    --primary-dark: 0 68% 35%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 75% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 0 75% 60%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 0 68% 45%;
+    
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 68% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 68% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* Custom animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
