@@ -188,9 +188,9 @@ const Services = () => {
               className="bg-white text-destructive hover:bg-white/90 hover:text-black border-white text-lg px-8 py-6 rounded-full"
               asChild
             >
-              <a href="tel:07060435173">
+              <a href="tel:08142112701">
                 <Phone className="mr-2 h-5 w-5" />
-                Call Emergency Line: 07060435173
+                Call Emergency Line: 08142112701
               </a>
             </Button>
           </div>

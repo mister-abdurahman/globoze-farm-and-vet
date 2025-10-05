@@ -58,7 +58,7 @@ const Header = () => {
               size="sm"
               className="bg-primary hover:bg-primary-dark"
             >
-              <a href="tel:07060435173">
+              <a href="tel:08142112701">
                 <Phone className="h-4 w-4 mr-2" />
                 Call Now
               </a>

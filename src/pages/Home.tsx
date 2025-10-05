@@ -12,6 +12,10 @@ import {
   Phone,
   ArrowRight,
 } from "lucide-react";
+import Gallery from "@/components/Gallery";
+import animalCare from "../assets/animal-care.jpg";
+import vetTeam from "../assets/vet team.jpg";
+import animalEmergency from "../assets/animal-emergency.webp";
 
 const Home = () => {
   const services = [
@@ -104,15 +108,18 @@ const Home = () => {
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 rounded-full"
                 asChild
               >
-                <a href="tel:07060435173">
+                <a href="tel:08142112701">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 07060435173
+                  Call: 08142112701
                 </a>
               </Button>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Gallery */}
+      <Gallery />
 
       {/* Services Preview Section */}
       <section className="py-20 bg-background">
@@ -180,43 +187,56 @@ const Home = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-4">
-                  <Shield className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Experienced Team
-                </h3>
-                <p className="text-muted-foreground">
-                  Skilled veterinary professionals with years of experience in
-                  animal care
-                </p>
-              </div>
+              <Card className="overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src={vetTeam}
+                  alt="Experienced Team"
+                  className="w-full h-40 object-cover"
+                />
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">
+                    Experienced Team
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Skilled veterinary professionals with years of experience in
+                    animal care
+                  </p>
+                </CardContent>
+              </Card>
 
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-4">
-                  <Heart className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Compassionate Care
-                </h3>
-                <p className="text-muted-foreground">
-                  We treat every animal with love, respect, and the care they
-                  deserve
-                </p>
-              </div>
+              <Card className="overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src={animalCare}
+                  alt="Compassionate Care"
+                  className="w-full h-40 object-cover"
+                />
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">
+                    Compassionate Care
+                  </h3>
+                  <p className="text-muted-foreground">
+                    We treat every animal with love, respect, and the care they
+                    deserve
+                  </p>
+                </CardContent>
+              </Card>
 
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-4">
-                  <Ambulance className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Emergency Ready
-                </h3>
-                <p className="text-muted-foreground">
-                  24/7 emergency services available for urgent animal care needs
-                </p>
-              </div>
+              <Card className="overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src={animalEmergency}
+                  alt="Emergency Ready"
+                  className="w-full h-40 object-cover"
+                />
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">
+                    Emergency Ready
+                  </h3>
+                  <p className="text-muted-foreground">
+                    24/7 emergency services available for urgent animal care
+                    needs
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -283,9 +303,9 @@ const Home = () => {
               variant="outline"
               className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 rounded-full"
             >
-              <a href="tel:07060435173">
+              <a href="tel:08142112701">
                 <Phone className="mr-2 h-5 w-5" />
-                07060435173
+                08142112701
               </a>
             </Button>
           </div>

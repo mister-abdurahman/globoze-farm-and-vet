@@ -52,13 +52,18 @@ const Contact = () => {
                             Phone
                           </h3>
                           <a
-                            href="tel:07060435173"
+                            href="tel:08142112701"
                             className="text-muted-foreground hover:text-primary transition-colors"
                           >
-                            07060435173
+                            08142112701 (Call)
                           </a>
-                          <p className="text-sm text-muted-foreground mt-1">
-                            Available for calls and WhatsApp
+                          <p className="mt-1">
+                            <a
+                              href="https://api.whatsapp.com/send/?phone=2347060435173&text=Hello%21+I+need+help+with+my+pet.&type=phone_number&app_absent=0"
+                              className="text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              2347060435173 (Whatsapp)
+                            </a>
                           </p>
                         </div>
                       </div>
@@ -138,7 +143,7 @@ const Contact = () => {
                       className="bg-white text-destructive hover:bg-white/90 border-white"
                       asChild
                     >
-                      <a href="tel:07060435173">
+                      <a href="tel:08142112701">
                         <Phone className="mr-2 h-4 w-4" />
                         Call Emergency Line
                       </a>
