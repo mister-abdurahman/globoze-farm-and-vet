@@ -1,5 +1,5 @@
 [build]
-  publish = "build"    # change to your publish dir (e.g., "dist" or "out")
+  publish = "dist"    # change to your publish dir (e.g., "dist" or "out")
 
 [[redirects]]
   from = "/*"
