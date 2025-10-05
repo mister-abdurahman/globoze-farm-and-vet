@@ -7,6 +7,7 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+
+          <WhatsAppButton />
         </main>
         <Footer />
         <Toaster />
