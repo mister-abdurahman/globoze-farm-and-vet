@@ -185,10 +185,10 @@ const Services = () => {
             <Button
               size="lg"
               variant="outline"
-              className="bg-white text-destructive hover:bg-white/90 hover:text-black border-white text-lg px-8 py-6 rounded-full"
+              className="bg-white text-destructive hover:bg-white/90 hover:text-black border-white text-lg px-4 py-3 rounded-full"
               asChild
             >
-              <a href="tel:08142112701">
+              <a href="tel:08142112701" className="text-sm">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Emergency Line: 08142112701
               </a>
