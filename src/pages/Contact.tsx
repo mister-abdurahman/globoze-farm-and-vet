@@ -103,7 +103,7 @@ const Contact = () => {
                             Email
                           </h3>
                           <p className="text-muted-foreground">
-                            info@globozevets.com
+                            info@globozevetservices.site
                           </p>
                         </div>
                       </div>
