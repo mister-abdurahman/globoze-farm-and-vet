@@ -11,7 +11,7 @@ const images = [
   { id: 1, src: gallery1, alt: "Gallery image 1", caption: "Vicious Dog" },
   { id: 2, src: gallery2, alt: "Gallery image 2", caption: "Fluffy Cat" },
   { id: 3, src: gallery3, alt: "Gallery image 3", caption: "Gentle Bunny" },
-  { id: 4, src: gallery4, alt: "Gallery image 4", caption: "Curious Cat" },
+  { id: 4, src: gallery4, alt: "Gallery image 4", caption: "Curious Cattle" },
   { id: 5, src: gallery5, alt: "Gallery image 5", caption: "Charming Turkey" },
   { id: 6, src: gallery6, alt: "Gallery image 6", caption: "Healthy Sheep" },
 ];
@@ -76,7 +76,7 @@ const Gallery = () => {
   }, []); // Re-run effect whenever the current index changes
   return (
     <section className="py-16 px-4 bg-gray-50 text-center">
-      <h2 className="text-4xl font-extrabold text-blue-900 mb-2">
+      <h2 className="text-4xl font-extrabold text-red-900 mb-2">
         Our Happy Patients
       </h2>
       <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -160,7 +160,7 @@ const Gallery = () => {
               className={`w-3 h-3 rounded-full transition-colors duration-300 ${
                 index === currentIndex
                   ? "bg-red-700 scale-125"
-                  : "bg-white/50 hover:bg-white"
+                  : "bg-white/80 hover:bg-white"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             ></button>

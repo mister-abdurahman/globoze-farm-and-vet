@@ -11,6 +11,7 @@ import {
   Star,
   Phone,
   ArrowRight,
+  UserRoundPen,
 } from "lucide-react";
 import Gallery from "@/components/Gallery";
 import animalCare from "../assets/animal-care.jpg";
@@ -19,6 +20,12 @@ import animalEmergency from "../assets/animal-emergency.webp";
 
 const Home = () => {
   const services = [
+    {
+      icon: UserRoundPen,
+      title: "Consultation",
+      description:
+        "Personalized veterinary consultations to assess health and plan care",
+    },
     {
       icon: Stethoscope,
       title: "Routine Checkups",
@@ -34,11 +41,11 @@ const Home = () => {
       title: "Surgery",
       description: "Expert surgical care with modern facilities",
     },
-    {
-      icon: Ambulance,
-      title: "Emergency Care",
-      description: "24/7 emergency services when you need them most",
-    },
+    // {
+    //   icon: Ambulance,
+    //   title: "Emergency Care",
+    //   description: "24/7 emergency services when you need them most",
+    // },
   ];
 
   const testimonials = [
@@ -125,7 +132,7 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-900">
               Our Core Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -177,7 +184,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-900">
                 Why Choose Globoze?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -246,7 +253,7 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-900">
               What Our Clients Say
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

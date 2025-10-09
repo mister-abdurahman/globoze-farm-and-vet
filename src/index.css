@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* // Import Swiper styles */
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
-@import "swiper/css/effect-fade";
 /* Globoze Veterinary Services Design System
    Colors inspired by the GVS logo: Deep maroon red and black
    Fonts: Montserrat Bold for headings, Open Sans Regular for body

@@ -12,10 +12,22 @@ import {
   ShieldCheck,
   AlertCircle,
   Phone,
+  UserRoundPen,
 } from "lucide-react";
 
 const Services = () => {
   const services = [
+    {
+      icon: UserRoundPen,
+      title: "Consultation",
+      description:
+        "Personalized veterinary consultations to assess health concerns and create a tailored care plan.",
+      features: [
+        "One-on-one vet assessment",
+        "Care plan & recommendations",
+        "Follow-up scheduling",
+      ],
+    },
     {
       icon: Stethoscope,
       title: "Routine Checkups",
