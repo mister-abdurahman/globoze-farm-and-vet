@@ -8,12 +8,12 @@ import gallery5 from "../assets/gallery5.jpg";
 import gallery6 from "../assets/gallery6.jpg";
 
 const images = [
-  { id: 1, src: gallery1, alt: "Gallery image 1", caption: "Happy Puppy" },
-  { id: 2, src: gallery2, alt: "Gallery image 2", caption: "Playful Kitten" },
-  { id: 3, src: gallery3, alt: "Gallery image 3", caption: "Gentle Rabbit" },
-  { id: 4, src: gallery4, alt: "Gallery image 4", caption: "Curious Ferret" },
-  { id: 5, src: gallery5, alt: "Gallery image 5", caption: "Exotic Bird" },
-  { id: 6, src: gallery6, alt: "Gallery image 6", caption: "Healthy Ram" },
+  { id: 1, src: gallery1, alt: "Gallery image 1", caption: "Vicious Dog" },
+  { id: 2, src: gallery2, alt: "Gallery image 2", caption: "Fluffy Cat" },
+  { id: 3, src: gallery3, alt: "Gallery image 3", caption: "Gentle Bunny" },
+  { id: 4, src: gallery4, alt: "Gallery image 4", caption: "Curious Cat" },
+  { id: 5, src: gallery5, alt: "Gallery image 5", caption: "Charming Turkey" },
+  { id: 6, src: gallery6, alt: "Gallery image 6", caption: "Healthy Sheep" },
 ];
 
 // const Gallery: React.FC = () => {
