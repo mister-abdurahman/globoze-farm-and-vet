@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Globoze Veterinary Services Design System 
+/* // Import Swiper styles */
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+/* Globoze Veterinary Services Design System
    Colors inspired by the GVS logo: Deep maroon red and black
    Fonts: Montserrat Bold for headings, Open Sans Regular for body
    All colors MUST be HSL for consistency
@@ -52,11 +57,15 @@
 
     /* Border radius */
     --radius: 0.5rem;
-    
+
     /* Custom design tokens */
     --vet-gradient: linear-gradient(135deg, hsl(0, 68%, 32%), hsl(0, 68%, 42%));
-    --warm-gradient: linear-gradient(180deg, hsl(40, 20%, 98%), hsl(40, 15%, 94%));
-    
+    --warm-gradient: linear-gradient(
+      180deg,
+      hsl(40, 20%, 98%),
+      hsl(40, 15%, 94%)
+    );
+
     /* Shadows with maroon tint */
     --shadow-soft: 0 4px 20px -2px hsl(0 68% 32% / 0.1);
     --shadow-medium: 0 8px 30px -4px hsl(0 68% 32% / 0.15);
@@ -104,7 +113,7 @@
     --border: 0 0% 22%;
     --input: 0 0% 22%;
     --ring: 0 68% 45%;
-    
+
     --sidebar-background: 0 0% 10%;
     --sidebar-foreground: 0 0% 95%;
     --sidebar-primary: 0 68% 48%;
@@ -123,11 +132,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
   }
 }
@@ -176,4 +190,17 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: #a0aec0 !important; /* Tailwind gray-400 */
+  opacity: 1 !important;
+  transition: all 0.2s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3b82f6 !important; /* Tailwind blue-500 */
+  transform: scale(1.2);
 }
