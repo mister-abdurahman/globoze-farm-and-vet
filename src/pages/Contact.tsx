@@ -4,13 +4,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
-import { toast } from "sonner";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    toast.success("Thank you! We'll get back to you soon.");
-  };
+  // Form submission is handled by Formspree via the form's action attribute.
 
   return (
     <div className="min-h-screen">
@@ -103,7 +99,7 @@ const Contact = () => {
                             Email
                           </h3>
                           <p className="text-muted-foreground">
-                            info@globozevetservices.site
+                            globozevetservices@gmail.com
                           </p>
                         </div>
                       </div>
@@ -159,11 +155,17 @@ const Contact = () => {
                     <h2 className="text-2xl font-bold mb-6 text-foreground">
                       Send Us a Message
                     </h2>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form
+                      // action="https://formsubmit.co/aramramadan7@gmail.com"
+                      action="https://formspree.io/f/xyzndqeg"
+                      method="POST"
+                      className="space-y-6"
+                    >
                       <div>
                         <Label htmlFor="name">Full Name *</Label>
                         <Input
                           id="name"
+                          name="name"
                           type="text"
                           placeholder="Your name"
                           required
@@ -175,6 +177,7 @@ const Contact = () => {
                         <Label htmlFor="phone">Phone Number *</Label>
                         <Input
                           id="phone"
+                          name="phone"
                           type="tel"
                           placeholder="Your phone number"
                           required
@@ -186,6 +189,7 @@ const Contact = () => {
                         <Label htmlFor="email">Email Address</Label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="your.email@example.com"
                           className="mt-2"
@@ -196,6 +200,7 @@ const Contact = () => {
                         <Label htmlFor="animalType">Type of Animal</Label>
                         <Input
                           id="animalType"
+                          name="animalType"
                           type="text"
                           placeholder="e.g., Dog, Cat, Cow, Goat"
                           className="mt-2"
@@ -206,6 +211,7 @@ const Contact = () => {
                         <Label htmlFor="message">Message *</Label>
                         <Textarea
                           id="message"
+                          name="message"
                           placeholder="Tell us about your animal's needs or your inquiry"
                           rows={5}
                           required

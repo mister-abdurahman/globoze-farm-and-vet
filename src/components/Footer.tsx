@@ -1,19 +1,28 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
 import logo from "@/assets/gvs_logo.jpg";
+import {
+  Facebook,
+  Instagram,
+  MessageSquare,
+  // TikTok isn't available in lucide-react; we'll use a simple SVG inline for TikTok
+} from "lucide-react";
+import { FaWhatsapp, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <img
+            src={logo}
+            alt="GVS Logo"
+            className="h-16 w-16 mb-4 bg-white rounded-lg p-2"
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {/* Company Info */}
           <div>
-            <img
-              src={logo}
-              alt="GVS Logo"
-              className="h-16 w-16 mb-4 bg-white rounded-lg p-2"
-            />
             <h3 className="font-bold text-lg mb-2">
               Globoze Farms & Veterinary Services
             </h3>
@@ -88,7 +97,7 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-1 flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  info@globozevets.com
+                  globozevetservices@gmail.com
                 </span>
               </li>
             </ul>
@@ -117,6 +126,51 @@ const Footer = () => {
                 </div>
               </li>
             </ul>
+          </div>
+          {/* Social Links placed after Opening Hours */}
+          <div className="">
+            <h4 className="font-bold text-lg mb-4">Connect with us</h4>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.tiktok.com/@globozevet"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Globoze on TikTok"
+                className="text-primary-foreground/80 hover:text-white transition-colors"
+              >
+                <FaTiktok />
+              </a>
+
+              <a
+                href="https://www.instagram.com/globoze_veterinary_services"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Globoze on Instagram"
+                className="text-primary-foreground/80 hover:text-white transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://web.facebook.com/globoze.veterinary.services"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Globoze on Facebook"
+                className="text-primary-foreground/80 hover:text-white transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://wa.me/2347060435173"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Globoze on WhatsApp"
+                className="text-primary-foreground/80 hover:text-white transition-colors"
+              >
+                <FaWhatsapp size={20} />
+              </a>
+            </div>
           </div>
         </div>
 
