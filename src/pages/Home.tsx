@@ -14,6 +14,7 @@ import {
   UserRoundPen,
 } from "lucide-react";
 import Gallery from "@/components/Gallery";
+import VideoTestimonials from "@/components/VideoTestimonials";
 import animalCare from "../assets/animal-care.jpg";
 import vetTeam from "../assets/vet team.jpg";
 import animalEmergency from "../assets/animal-emergency.webp";
@@ -248,6 +249,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Testimonials */}
+      <VideoTestimonials />
 
       {/* Testimonials Section */}
       <section className="py-20 bg-background">
