@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "./ui/button";
 
 type Props = {
   videoIds?: string[];
@@ -6,8 +7,12 @@ type Props = {
 
 const defaultVideos = [
   // Replace these sample IDs with your real YouTube IDs
-  "dg2rFvz-NWA",
-  "CZqmYF_lRd4",
+  "IERH1-CeRho",
+  "P_uO2Tqo9bE",
+  "GD2fC0IHIpI",
+  "-RMbnl6TsDU",
+  "oiDxobuc85E",
+  "Z9MAAGef_HM",
 ];
 
 const VideoCard: React.FC<{ id: string }> = ({ id }) => {
@@ -45,6 +50,16 @@ const VideoTestimonials: React.FC<Props> = ({ videoIds = defaultVideos }) => {
           {videoIds.map((id) => (
             <VideoCard key={id} id={id} />
           ))}
+        </div>
+
+        <div className="flex justify-center mt-7">
+          <a
+            href="https://www.youtube.com/@globozeveterinaryclinic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>See more on YouTube</Button>
+          </a>
         </div>
       </div>
     </section>
