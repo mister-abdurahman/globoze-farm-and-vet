@@ -6,7 +6,6 @@ type Props = {
 };
 
 const defaultVideos = [
-  // Replace these sample IDs with your real YouTube IDs
   "IERH1-CeRho",
   "P_uO2Tqo9bE",
   "GD2fC0IHIpI",
@@ -59,6 +58,7 @@ const VideoTestimonials: React.FC<Props> = ({ videoIds = defaultVideos }) => {
             rel="noopener noreferrer"
           >
             <Button>See more on YouTube</Button>
+            {/* <Button>See more on YouTube</Button> */}
           </a>
         </div>
       </div>
